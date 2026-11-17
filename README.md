@@ -1,4 +1,7 @@
 # 🔥 Calories Burnt Prediction
+## 📸 Application Preview
+
+![Calories Burnt Prediction App](app-screenshot.png)
 
 A Machine Learning project that predicts the estimated number of calories burnt during exercise using personal and exercise-related information.
 
