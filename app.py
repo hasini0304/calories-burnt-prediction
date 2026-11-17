@@ -1,7 +1,8 @@
 
 import streamlit as st
 import pandas as pd
-import joblib
+import gzip
+import pickle
 
 st.set_page_config(
     page_title="Calories Burnt Predictor",
@@ -9,7 +10,8 @@ st.set_page_config(
     layout="centered"
 )
 
-package = joblib.load("calories_model.pkl")
+with gzip.open("calories_model.pkl.gz", "rb") as f:
+    package = pickle.load(f)
 
 model = package['model']
 
